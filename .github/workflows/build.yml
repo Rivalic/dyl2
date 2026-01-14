@@ -30,12 +30,24 @@ jobs:
         brew install ldid
         
         # Install insert_dylib
-        if ! command -v insert_dylib &> /dev/null; then
-          git clone https://github.com/Tyilo/insert_dylib.git /tmp/insert_dylib
-          cd /tmp/insert_dylib
-          xcodebuild
-          sudo cp build/Release/insert_dylib /usr/local/bin/
+        echo "Building insert_dylib..."
+        git clone https://github.com/Tyilo/insert_dylib.git /tmp/insert_dylib
+        cd /tmp/insert_dylib
+        xcodebuild -configuration Release
+        
+        # Find where the binary is
+        INSERT_DYLIB_BIN=$(find . -name insert_dylib -type f -perm +111 | head -n 1)
+        if [ -f "$INSERT_DYLIB_BIN" ]; then
+          echo "Found insert_dylib at $INSERT_DYLIB_BIN"
+          sudo cp "$INSERT_DYLIB_BIN" /usr/local/bin/
+        else
+          echo "Error: insert_dylib binary not found after build!"
+          exit 1
         fi
+        
+        # Verify installation
+        command -v insert_dylib
+        insert_dylib --version || true
     
     - name: Build DeviceRotation dylib
       run: |
@@ -45,12 +57,15 @@ jobs:
         make clean
         make package
         
+        # Verify build output
+        ls -R .theos/obj
+        
         # Copy dylib to Frameworks
         mkdir -p ../swiggy-extracted/Frameworks
-        cp .theos/obj/debug/DeviceRotation.dylib ../swiggy-extracted/Frameworks/
+        cp .theos/obj/debug/DeviceRotation.dylib ../swiggy-extracted/Frameworks/ || cp .theos/obj/DeviceRotation.dylib ../swiggy-extracted/Frameworks/
         
         echo "Dylib built successfully!"
-        ls -lh .theos/obj/debug/DeviceRotation.dylib
+        ls -lh ../swiggy-extracted/Frameworks/DeviceRotation.dylib
     
     - name: Inject dylib into app
       run: |
@@ -59,11 +74,21 @@ jobs:
         BINARY="swiggy-extracted/swiggy"
         DYLIB_PATH="@executable_path/Frameworks/DeviceRotation.dylib"
         
+        # Check if binary exists
+        if [ ! -f "$BINARY" ]; then
+          echo "Error: Binary not found at $BINARY"
+          ls -R swiggy-extracted/
+          exit 1
+        fi
+        
         # Backup original
         cp "$BINARY" "${BINARY}.backup"
         
         # Inject using insert_dylib
         insert_dylib --inplace --all-yes "$DYLIB_PATH" "$BINARY"
+        
+        # Verify injection
+        otool -L "$BINARY" | grep DeviceRotation
         
         echo "Dylib injected successfully!"
     
