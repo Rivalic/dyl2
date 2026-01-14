@@ -33,22 +33,17 @@ jobs:
         echo "Building insert_dylib..."
         git clone https://github.com/Tyilo/insert_dylib.git /tmp/insert_dylib
         cd /tmp/insert_dylib
-        xcodebuild -configuration Release
+        # Use clang directly for a more reliable build
+        clang -O3 main.c -o insert_dylib
         
-        # Find where the binary is (macOS find doesn't support -perm +111)
-        if [ -f "build/Release/insert_dylib" ]; then
-          echo "Found insert_dylib at build/Release/insert_dylib"
-          sudo cp "build/Release/insert_dylib" /usr/local/bin/
+        if [ -f "insert_dylib" ]; then
+          echo "Successfully built insert_dylib"
+          sudo cp insert_dylib /usr/local/bin/
+          chmod +x /usr/local/bin/insert_dylib
         else
-          echo "Looking for insert_dylib binary..."
-          INSERT_DYLIB_BIN=$(find . -name insert_dylib -type f | head -n 1)
-          if [ -f "$INSERT_DYLIB_BIN" ]; then
-            echo "Found insert_dylib at $INSERT_DYLIB_BIN"
-            sudo cp "$INSERT_DYLIB_BIN" /usr/local/bin/
-          else
-            echo "Error: insert_dylib binary not found!"
-            exit 1
-          fi
+          echo "Error: Failed to build insert_dylib!"
+          ls -R .
+          exit 1
         fi
         
         # Verify installation
