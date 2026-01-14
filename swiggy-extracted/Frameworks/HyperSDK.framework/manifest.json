@@ -1,0 +1,159 @@
+{
+  "godel": {
+    "v1-config.jsa": {
+      "hash": "d3e00aa75e18c94de0275da2fe3da618"
+    }
+  },
+  "hyper": {
+    "bundles": {
+      "acs": {
+        "in.juspay.godel": {
+          "0.6.238": {
+            "v1-acs.jsa": {
+              "hash": "9534e0d10fbb7b48863241394a83ae53"
+            }
+          }
+        }
+      },
+      "app": {
+        "in.juspay.dotp": {
+          "5.0.50": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "e7482abf1242e94fde13df694a66416e"
+              }
+            }
+          },
+          "5.0.62": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "e74cedd1e05bcf2ffbb25282cd5c79d1"
+              }
+            }
+          }
+        },
+        "in.juspay.ec": {
+          "3.47.6": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "d8e88fc1bb5d44f99cfed619df06a4b3"
+              }
+            }
+          },
+          "7.7.0": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "5710688cc5fb8d57980533368ea73bc0"
+              }
+            }
+          }
+        },
+        "in.juspay.hyperupi": {
+          "2.7.91": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "346251a1557a5d46e9fb9cf1ede6c11e"
+              }
+            }
+          }
+        },
+        "in.juspay.inappupi": {
+          "2.3.73": {
+            "ios": {
+              "v1-index_bundle.jsa": {
+                "hash": "735f55ead1380bdf07604e70a6f3d8c4"
+              }
+            }
+          }
+        },
+        "tracker": {
+          "2.0.38": {
+            "v1-tracker.jsa": {
+              "hash": "566b7f449ff4879981b5221c5a17fea8"
+            }
+          },
+          "2.1.40": {
+            "v1-tracker.jsa": {
+              "hash": "8c8f7b499e0d5994bdecdcf1fbef651b"
+            }
+          }
+        }
+      },
+      "config": {
+        "in.juspay.dotp": {
+          "common": {
+            "2.0.55": {
+              "v1-config.jsa": {
+                "hash": "8497a1f8c2ee616897003a562c05ca06"
+              }
+            }
+          }
+        },
+        "in.juspay.ec": {
+          "common": {
+            "1.1.57": {
+              "v1-config.jsa": {
+                "hash": "918912caf47dc769e57a97fa4e6bd479"
+              }
+            },
+            "1.2.19": {
+              "v1-config.jsa": {
+                "hash": "0fefa18e5826c457de66b2e0d97b9cbb"
+              }
+            }
+          }
+        },
+        "in.juspay.inappupi": {
+          "common": {
+            "2.0.88": {
+              "v1-config.jsa": {
+                "hash": "3ae61469da64a5ed95ae3f35243b2451"
+              }
+            }
+          }
+        }
+      },
+      "in.juspay.merchants": {
+        "bbdaily": {
+          "ios": {
+            "release": {
+              "config.json": {
+                "hash": "3hkj23h5k23jh52kj3h"
+              }
+            }
+          }
+        },
+        "swiggy": {
+          "ios": {
+            "release": {
+              "sdk_config.json": {
+                "hash": "75fef58c3ef8341fbef1ea7fd4e73deb"
+              }
+            }
+          }
+        }
+      }
+    },
+    "configs": {
+      "swiggy": {
+        "in.juspay.hyperupi": {
+          "1.44.2": {
+            "v1-configuration.jsa": {
+              "hash": "c9f670e273238ea8c76a8dbae46eac4d"
+            },
+            "v1-strings.jsa": {
+              "hash": "47d29f0b89fb2285e5e31c72903442c0"
+            }
+          },
+          "2.0.3": {
+            "configuration": {
+              "v1-icons.jsa": {
+                "hash": "c49b238c766fa77c3f7d5cc725ffee0b"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

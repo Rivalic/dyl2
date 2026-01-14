@@ -1,0 +1,8 @@
+https://t.me/FastDecryptBot
+
+Modifications applied to Info.plist:
+- Set UIDeviceFamily to 0, 1, 2 (Universal)
+- Removed UISupportedDevices restrictions
+- Removed UIRequiredDeviceCapabilities restrictions
+
+This bot automatically patches Apple Arcade apps.

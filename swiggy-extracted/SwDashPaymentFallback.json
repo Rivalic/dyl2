@@ -1,0 +1,24 @@
+{
+    "statusCode": 5,
+    "statusMessage": "Error while debiting amount/Payment Failed",
+    "data": {
+        "payment_fallbacks": {
+            "failure_title": "Transaction failed",
+            "failure_message": "Any amount deducted will be refunded within 4 days. How would you like to proceed?",
+            "failure_icon": "payment_failure_icon_gzp8qe",
+            "payment_methods": [{
+                "name": "retry",
+                "display_name": "Retry",
+                "payment_code": "RETRY"
+            }, {
+                "name": "dismiss",
+                "display_name": "Try Others",
+                "payment_code": "DISMISS"
+            }]
+        },
+        "order_data": null,
+        "invalid_coupon_response": null,
+        "inventory_messages": null
+    },
+    "successful": false
+}

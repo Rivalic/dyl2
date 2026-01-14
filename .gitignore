@@ -1,0 +1,55 @@
+# Git Ignore for Swiggy IPA Project
+
+# Build outputs
+*.ipa
+*.deb
+Payload/
+Swiggy-Modified.app/
+*.backup
+
+# Theos
+.theos/
+obj/
+*.o
+*.dylib
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Xcode
+xcuserdata/
+*.xcworkspace
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Backups
+*.bak
+*.orig
+
+# Don't ignore the extracted app (we need it for building)
+!swiggy-extracted/

@@ -1,0 +1,152 @@
+[
+ {
+   "elementType": "geometry",
+   "stylers": [
+     {
+       "saturation": -25
+     },
+     {
+       "lightness": 40
+     },
+     {
+       "visibility": "simplified"
+     }
+   ]
+ },
+ {
+   "elementType": "labels",
+   "stylers": [
+     {
+       "lightness": 40
+     },
+     {
+       "visibility": "simplified"
+     }
+   ]
+ },
+ {
+   "elementType": "labels.icon",
+   "stylers": [
+     {
+       "visibility": "simplified"
+     }
+   ]
+ },
+ {
+   "elementType": "labels.text.fill",
+   "stylers": [
+     {
+       "visibility": "simplified"
+     }
+   ]
+ },
+ {
+   "featureType": "landscape",
+   "stylers": [
+     {
+       "saturation": 5
+     }
+   ]
+ },
+ {
+   "featureType": "landscape.natural",
+   "stylers": [
+     {
+       "saturation": -35
+     }
+   ]
+ },
+ {
+   "featureType": "poi",
+   "elementType": "geometry",
+   "stylers": [
+     {
+       "saturation": -45
+     },
+     {
+       "lightness": 25
+     }
+   ]
+ },
+ {
+   "featureType": "poi",
+   "elementType": "labels",
+   "stylers": [
+     {
+       "saturation": -100
+     },
+     {
+       "lightness": 35
+     }
+   ]
+ },
+ {
+   "featureType": "poi",
+   "elementType": "labels.icon",
+   "stylers": [
+     {
+       "color": "#9899a0"
+     }
+   ]
+ },
+ {
+   "featureType": "poi",
+   "elementType": "labels.text.fill",
+   "stylers": [
+     {
+       "color": "#898990"
+     }
+   ]
+ },
+ {
+   "featureType": "road",
+   "stylers": [
+     {
+       "color": "#eaebf1"
+     }
+   ]
+ },
+ {
+   "featureType": "transit",
+   "stylers": [
+     {
+       "visibility": "off"
+     }
+   ]
+ },
+ {
+   "featureType": "water",
+   "stylers": [
+     {
+       "saturation": -20
+     },
+     {
+       "lightness": 60
+     }
+   ]
+ },
+ {
+   "featureType": "water",
+   "elementType": "labels",
+   "stylers": [
+     {
+       "color": "#cce6f0"
+     },
+     {
+       "lightness": 35
+     }
+   ]
+ },
+ {
+   "featureType": "water",
+   "elementType": "labels.text",
+   "stylers": [
+     {
+       "color": "#b5d2de"
+     },
+     {
+       "lightness": 5
+     }
+   ]
+ }
+]

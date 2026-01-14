@@ -1,0 +1,12 @@
+//
+//  excludeArm64.xcconfig
+//  swiggy
+//
+//  Created by Dhruvil Rameshbhai Patel on 07/02/23.
+//  Copyright © 2023 www.swiggy.com. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64

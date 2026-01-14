@@ -1,0 +1,285 @@
+{
+  "config": {
+    "contexts": [
+      {
+        "condition": {
+          "and": [
+            {
+              "==": [
+                {
+                  "var": "os"
+                },
+                "ios"
+              ]
+            }
+          ]
+        },
+        "id": "c649acb4676f0511b5a391f6ca9895008ffd4f28824094d998943a6853754f37",
+        "override_with_keys": [
+          "f883d73e976aa43d2f51bbb8088ad1e5dc043d8bde8b38df6426634971dd464e"
+        ],
+        "priority": 3,
+        "weight": 3
+      },
+      {
+        "condition": {
+          "and": [
+            {
+              "in": [
+                "swiggy",
+                {
+                  "var": "clientId"
+                }
+              ]
+            },
+            {
+              "==": [
+                {
+                  "var": "os"
+                },
+                "ios"
+              ]
+            }
+          ]
+        },
+        "id": "2ad39fba9b939eecd6aadfd61ddeb768d8a92632b849b85e67b51426a0e4318c",
+        "override_with_keys": [
+          "2024b3cda51d5cdfa1a27b006ca3e188a5d84a705cac1f8322eb41d3a7a6adcf"
+        ],
+        "priority": 282,
+        "weight": 282
+      }
+    ],
+    "default_configs": {
+      "dotp.actionButtonColorOne": "#FEF6F9",
+      "dotp.actionButtonColorTwo": "#FCE9EF",
+      "dotp.activeResendOtpFont": null,
+      "dotp.addSafeAreaPadding": false,
+      "dotp.allowAutoSubmit": false,
+      "dotp.allowClipboardReader": false,
+      "dotp.allowSmsConsentReader": true,
+      "dotp.allowSmsReader": true,
+      "dotp.autoReadLoaderMargin": null,
+      "dotp.backButtonVisibility": null,
+      "dotp.background": "#FFFFFFFF",
+      "dotp.bankIconBackgroundColor": null,
+      "dotp.bankPageTextAlpha": null,
+      "dotp.bankPageTextColor": null,
+      "dotp.brandImage": null,
+      "dotp.brandImageHeight": null,
+      "dotp.brandImageVisibility": null,
+      "dotp.brandImageWidth": null,
+      "dotp.buttonGradient.angle": null,
+      "dotp.buttonGradient.firstColour": null,
+      "dotp.buttonGradient.secondColour": null,
+      "dotp.buttonGradient.useLinear": null,
+      "dotp.cancelButtonCornerRadius": null,
+      "dotp.cancelButtonPadding": null,
+      "dotp.cancelButtonTextSize": null,
+      "dotp.cancelDialogNoButton": null,
+      "dotp.cancelDialogYesButton": null,
+      "dotp.cardBackCardBrandGap": null,
+      "dotp.contentPadding": null,
+      "dotp.cornerRadius": 5,
+      "dotp.customLogoHeight": 40,
+      "dotp.delayAutoSubmitInSeconds": 3,
+      "dotp.delayResendInSeconds": 3,
+      "dotp.dialogBoxCornerRadius": null,
+      "dotp.dialogHeaderTextColor": null,
+      "dotp.dialogPrimaryTextColor": null,
+      "dotp.dialogPrimaryTextFontFace": "Regular",
+      "dotp.dividerBackgroundColor": null,
+      "dotp.dividerColor": null,
+      "dotp.editTextFocusColor": null,
+      "dotp.editTextFontColor": null,
+      "dotp.editTextFontSize": null,
+      "dotp.editTextLength": null,
+      "dotp.editTextLetterSpacing": null,
+      "dotp.enableNineDigitBin": null,
+      "dotp.enterOtpTextSize": 16,
+      "dotp.failureMsgBackgroundColor": "#CC3300",
+      "dotp.fontWeight": "-Regular",
+      "dotp.footerBackground": null,
+      "dotp.footerContentPadding": null,
+      "dotp.footerText": null,
+      "dotp.fullPageGodel.defaultTime": null,
+      "dotp.fullPageGodel.excludeTime": null,
+      "dotp.fullPageGodel.excludeUrlList": null,
+      "dotp.fullPageGodel.ignoreUrlList": null,
+      "dotp.fullPageGodel.ignoreUrlTime": null,
+      "dotp.fullPageGodel.includeTime": null,
+      "dotp.fullPageGodel.includeUrlList": null,
+      "dotp.fullPageGodel.specificUrlList": null,
+      "dotp.globalAutoReadTimerInSeconds": 15,
+      "dotp.gravity": null,
+      "dotp.headerLeftTextHeight": null,
+      "dotp.headerLeftTextWidth": null,
+      "dotp.headerOneTextColor": null,
+      "dotp.headerText": "Pay",
+      "dotp.headerTextVisibility": null,
+      "dotp.headerTwoTextColor": null,
+      "dotp.hideAmountInToolBar": false,
+      "dotp.hintTextColor": null,
+      "dotp.inputFieldHeight": 56,
+      "dotp.inputTextFieldText": null,
+      "dotp.invertDialogCTA": null,
+      "dotp.isFullScreenActivity": false,
+      "dotp.isTextInAllCaps": false,
+      "dotp.maxOtpEditTextWidth": null,
+      "dotp.merchantIconUrl": null,
+      "dotp.merchantName": "",
+      "dotp.merchentBrandImage": null,
+      "dotp.orderOfElementsInBrandingLayout": [
+        "divider",
+        "textView",
+        "juspayloader",
+        "divider"
+      ],
+      "dotp.otpBoxBackground": "#111111",
+      "dotp.otpBoxBorderColor": "#BCC2C6",
+      "dotp.otpBoxTiltedGreyAnimation": true,
+      "dotp.otpEditTextBackground": "#FFF5F6F7",
+      "dotp.otpEditTextColor": null,
+      "dotp.otpEditTextSize": null,
+      "dotp.otpInfoMargin": null,
+      "dotp.otpTextColor": "#FFFFFF",
+      "dotp.otpVerificationTextColor": null,
+      "dotp.otpVerificationTextSize": null,
+      "dotp.pageExpiredText": null,
+      "dotp.pageExpiryTimerText": null,
+      "dotp.payButtonFont": null,
+      "dotp.payButtonText": null,
+      "dotp.payButtonTextSize": null,
+      "dotp.payButtonTextV2": null,
+      "dotp.paymentMethodConfig": {
+        "TATANEU": {
+          "otpPattern": "^([0-9]+)$,6"
+        },
+        "TATAPAYLATER": {
+          "pageExpiryTime": 180
+        }
+      },
+      "dotp.popUpImage": null,
+      "dotp.popupSecondaryTextColor": "#FFFFFF",
+      "dotp.popupViewSubmitButtonHeight": 40,
+      "dotp.primaryFont": "OpenSans",
+      "dotp.resendColor": "#0099FF",
+      "dotp.resendOTPMargin": null,
+      "dotp.resendOTPText": null,
+      "dotp.resendOtpAlpha": null,
+      "dotp.resendOtpSupportText": null,
+      "dotp.resendOtpTextColor": null,
+      "dotp.resendOtpTimeColor": null,
+      "dotp.resendTextFontFace": null,
+      "dotp.resendTextSize": null,
+      "dotp.setStroke": null,
+      "dotp.shouldAddBankImageBackground": null,
+      "dotp.shouldShowBankImageDown": null,
+      "dotp.shouldShowDotpInPopup": null,
+      "dotp.showAmountInToolBar": true,
+      "dotp.showAmountInToolbar": false,
+      "dotp.showClipboardReaderCounter": 3,
+      "dotp.showDefaultCurserNativeGodel": null,
+      "dotp.showSmsConsentReaderCounter": 3,
+      "dotp.showSmsReaderCounter": 3,
+      "dotp.showToolBar": null,
+      "dotp.showV2FullScreenDOTP": false,
+      "dotp.showV2Popup": false,
+      "dotp.stopSubmitTextColor": null,
+      "dotp.subHeaderText": null,
+      "dotp.submitButtonAnimationColor": null,
+      "dotp.submitButtonColor": "#0099FF",
+      "dotp.submitButtonCornerRadius": null,
+      "dotp.submitButtonHeight": null,
+      "dotp.submitButtonInactiveColor": null,
+      "dotp.submitButtonOverlayColor": "#0099FF",
+      "dotp.submitButtonText": null,
+      "dotp.submitButtonTextColor": null,
+      "dotp.submitButtonWidth": null,
+      "dotp.submitExpiryTime": null,
+      "dotp.submittingButtonText": null,
+      "dotp.successMsgBackgroundColor": "#009900",
+      "dotp.toolBarBottomPadding": 0,
+      "dotp.toolbarAmountFontFace": "Regular",
+      "dotp.toolbarBackImage": "https://assets.juspay.in/hyper/images/common/ic_back_arrow.png",
+      "dotp.toolbarBackground": "#FFFFFFFF",
+      "dotp.toolbarButtonLayoutHeight": null,
+      "dotp.toolbarButtonLayoutWidth": null,
+      "dotp.toolbarButtonMargin": null,
+      "dotp.toolbarHeight": null,
+      "dotp.toolbarLetterSpacing": null,
+      "dotp.toolbarPadding": null,
+      "dotp.toolbarPrimaryTextMargin": 8,
+      "dotp.toolbarTextAlignment": null,
+      "dotp.toolbarTextColor": "#333333",
+      "dotp.toolbarTextFontFace": "Regular",
+      "dotp.toolbarTextSize": 18,
+      "dotp.transactionCancelBackground": "#383838",
+      "dotp.transactionCancelText": "Cancel Transaction?",
+      "dotp.useRupeeSymbol": null,
+      "dotp.wrapContentsInScrollView": null,
+      "dotp.wrapInScrollBrandingTopMargin": 0
+    },
+    "overrides": {
+      "2024b3cda51d5cdfa1a27b006ca3e188a5d84a705cac1f8322eb41d3a7a6adcf": {
+        "dotp.allowAutoSubmit": true,
+        "dotp.cornerRadius": 16.0,
+        "dotp.delayAutoSubmitInSeconds": 2,
+        "dotp.delayResendInSeconds": 15,
+        "dotp.dialogPrimaryTextFontFace": null,
+        "dotp.editTextFocusColor": "#EC5F2A",
+        "dotp.editTextFontColor": "#000000",
+        "dotp.fontWeight": null,
+        "dotp.headerText": "Pay to ",
+        "dotp.headerTextVisibility": true,
+        "dotp.hintTextColor": "#BBBEC3",
+        "dotp.isTextInAllCaps": false,
+        "dotp.merchantName": "SWIGGY",
+        "dotp.otpEditTextBackground": "#FFFFFF",
+        "dotp.payButtonTextSize": 16.0,
+        "dotp.primaryFont": "Gilroy",
+        "dotp.resendColor": "#EC5F2A",
+        "dotp.shouldShowDotpInPopup": false,
+        "dotp.showAmountInToolbar": true,
+        "dotp.showV2FullScreenDOTP": true,
+        "dotp.submitButtonColor": "#EC5F2A",
+        "dotp.submitButtonCornerRadius": 12.0,
+        "dotp.submitButtonHeight": 54.0,
+        "dotp.submitButtonInactiveColor": "#C7CBD1",
+        "dotp.submitButtonOverlayColor": "#C14E21",
+        "dotp.submitButtonTextColor": "#FFFFFF",
+        "dotp.toolBarBottomPadding": 10,
+        "dotp.toolbarAmountFontFace": "Regular",
+        "dotp.toolbarBackImage": "ic_back_arrow",
+        "dotp.toolbarPrimaryTextMargin": null,
+        "dotp.toolbarTextColor": "#FF333333",
+        "dotp.toolbarTextFontFace": "Bold",
+        "dotp.useRupeeSymbol": true,
+        "dotp.wrapContentsInScrollView": true,
+        "dotp.wrapInScrollBrandingTopMargin": 180
+      },
+      "f883d73e976aa43d2f51bbb8088ad1e5dc043d8bde8b38df6426634971dd464e": {
+        "dotp.fullPageGodel.defaultTime": 7000,
+        "dotp.fullPageGodel.excludeTime": 8000,
+        "dotp.fullPageGodel.excludeUrlList": [
+          "https://securegw\\.paytm\\.in/instaproxy/directbank/.*"
+        ],
+        "dotp.fullPageGodel.ignoreUrlList": [
+          "https://sandbox\\.juspay\\.in/v2/pay/start/.*",
+          "https://securegw\\.paytm\\.in/theia/v1/directBankCardPayment.*",
+          "https://securegw\\.paytm\\.in/instaproxy/direct/payment/payonbank/v2.*"
+        ],
+        "dotp.fullPageGodel.ignoreUrlTime": 3000,
+        "dotp.fullPageGodel.includeTime": 5000,
+        "dotp.fullPageGodel.includeUrlList": [
+          "https://netsafe\\.hdfcbank\\.com/ACSWeb/authJsp/authImprovedHopsTxnPage\\.jsp.*"
+        ],
+        "dotp.fullPageGodel.specificUrlList": {
+          "https://securegw\\.paytm\\.in/theia/v1/transactionStatus.*": 10000
+        },
+        "dotp.submitExpiryTime": 10
+      }
+    }
+  },
+  "experiments": []
+}

@@ -1,0 +1,133 @@
+//
+//  IMitemcell.swift
+//  swiggyTests
+//
+//  Created by Hari Krushna Sahu on 06/12/21.
+//  Copyright © 2021 www.swiggy.com. All rights reserved.
+//
+
+{
+"@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.MartMenuItem",
+"display_name": "Nandini GoodLife Toned Milk ",
+"in_stock": true,
+"is_avail": true,
+"product_id": "13JKWIC8ZS",
+"categoryId": "a2958a8f-99a6-4729-918d-19a3bd68b000",
+"variations": [
+    [
+        "id": "2NS59V9ZLG",
+        "spin": "TSFVLEOF8M",
+        "quantity": "1 L",
+        "display_name": "Nandini GoodLife Toned Milk ",
+        "max_allowed_quantity": 6,
+        "weight_in_grams": 1000,
+        "volumetric_weight": 0,
+        "alcohol_content_percentage": 0,
+        "container_type": "",
+        "sub_category_type": "Toned",
+        "images": [
+            "rmwywpevc2th4fydxbem",
+            "uanfyztkojgk6pomjp1w",
+            "lqkhpgge89kgjwhmrfwu",
+            "ulzkupnzwqw6ndoccf45"
+        ],
+        "price": [
+            "mrp": 434,
+            "currency": "INR",
+            "store_price": 343,
+            "offer_price": 322,
+            "offer_applied": [
+                "offer_id": "",
+                "listing_description": "10% OFF",
+                "product_description": "10% OFF"
+            ]
+        ],
+        "inventory": [
+            "total": 1,
+            "remaining": 1,
+            "message": "",
+            "in_stock": true
+        ],
+        "dimensions": [
+            "length_in_cm": 9,
+            "width_in_cm": 6,
+            "height_in_cm": 17,
+            "volume_in_cc": 918
+        ],
+        "meta": [
+            "short_description": "UHT Sterilized Toned Milk",
+            "long_description": "UHT Sterilized Toned Milk",
+            "disclaimer": "Country of Origin: India. The shelf life of this product is 182 days from the date of manufacture. The image(s) shown are representative of the actual product. While every effort has been made to maintain accurate and up to date product related content, it is recommended to read product labels, batch and manufacturing details along with warnings, and directions before using or consuming a packaged product. For other products or any additional information, please contact the seller and in case you wish to contact the manufacturer, the address mentioned on the product label should be used."
+        ],
+        "sku_slot_info": [
+            "message": "null",
+            "avail": true,
+            "is_avail": true,
+            "next_change_time": []
+        ],
+        "cart_allowed_quantity": [
+            "total": 6,
+            "message": "The maximum quantity allowed for this item is 6"
+        ]
+    ],
+    [
+        "id": "2FYU786GFU",
+        "spin": "TSFVLEOF8M",
+        "quantity": "500 mL",
+        "display_name": "Nandini GoodLife Toned Milk ",
+        "max_allowed_quantity": 6,
+        "weight_in_grams": 1000,
+        "volumetric_weight": 0,
+        "alcohol_content_percentage": 0,
+        "container_type": "",
+        "sub_category_type": "Toned",
+        "images": [
+            "rmwywpevc2th4fydxbem",
+            "uanfyztkojgk6pomjp1w",
+            "lqkhpgge89kgjwhmrfwu",
+            "ulzkupnzwqw6ndoccf45"
+        ],
+        "price": [
+            "mrp": 280,
+            "currency": "INR",
+            "store_price": 280,
+            "offer_price": 246,
+            "offer_applied": [
+                "offer_id": "",
+                "listing_description": "10% OFF",
+                "product_description": "10% OFF"
+            ]
+        ],
+        "inventory": [
+            "total": 1,
+            "remaining": 1,
+            "message": "",
+            "in_stock": true
+        ],
+        "dimensions": [
+            "length_in_cm": 9,
+            "width_in_cm": 6,
+            "height_in_cm": 17,
+            "volume_in_cc": 918
+        ],
+        "meta": [
+            "short_description": "UHT Sterilized Toned Milk",
+            "long_description": "UHT Sterilized Toned Milk",
+            "disclaimer": "Country of Origin: India. The shelf life of this product is 182 days from the date of manufacture. The image(s) shown are representative of the actual product. While every effort has been made to maintain accurate and up to date product related content, it is recommended to read product labels, batch and manufacturing details along with warnings, and directions before using or consuming a packaged product. For other products or any additional information, please contact the seller and in case you wish to contact the manufacturer, the address mentioned on the product label should be used."
+        ],
+        "sku_slot_info": [
+            "message": "null",
+            "avail": true,
+            "is_avail": true,
+            "next_change_time": []
+        ],
+        "cart_allowed_quantity": [
+            "total": 6,
+            "message": "The maximum quantity allowed for this item is 6"
+        ]
+    ]
+],
+"available": true,
+"avail": true,
+"inStockAndSlotAvailable": true
+}

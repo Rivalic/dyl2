@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://api.juspay.in/pay.js"></script>
+    </head>
+    <body>
+        <form class="juspay_inline_form" id="payment_form" style="opacity:0">
+            <input type="hidden" class="card_token" id="token_elem_id" value="guest_token"></input></br>
+            <input type="hidden" class="merchant_id" id="merchant_elem_id" value="guest"></input></br>
+            <input type="hidden" class="order_id" id="order_elem_id" value="guest_order"></input></br>
+            <input type="password" id="card_cvv_elem_id" class="span1 security_code" placeholder="CVV"></input></br>
+            <button class="make_payment" id="make_cc_payment" type="submit">Pay</button></br>
+        </form>
+        <script type="text/javascript">
+            Juspay.Setup({
+                         payment_form: "#payment_form",
+                         success_handler: function(status) {},
+                         error_handler: function(error_code, error_message, bank_error_code,
+                                                 bank_error_message, gateway_id) {}
+                         })
+        </script>
+    </body>
+</html>

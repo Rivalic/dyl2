@@ -1,0 +1,151 @@
+{
+  "defaultChannels": [],
+  "enableTrackerFallback": false,
+  "godelConfig": {
+    "webViewAccess": {
+      "whitelistedClientIds": []
+    }
+  },
+  "headURLs": {
+    "production": [],
+    "sandbox": []
+  },
+  "healthCheckInterval": 3000,
+  "iframeSettings": {
+    "skipSrcDoc": false
+  },
+  "intentURIs": [
+    "upi://pay",
+    "phonepe://pay",
+    "paytmmp://pay",
+    "tez://upi/pay",
+    "credpay://upi/pay"
+  ],
+  "logChannelsConfig": [
+    {
+      "channel": "upi",
+      "encryptionLevelKey": "plain",
+      "logsUrlKey": "https://saga.yesbank.upi.juspay.in/godel/analytics",
+      "logsUrlKeySandbox": "https://saga.beta.yesbank.upi.juspay.in/godel/analytics"
+    }
+  ],
+  "logToS3": false,
+  "logsConfig": {
+    "batchCount": 75,
+    "channels": {},
+    "encryptionLevelKey": "encryption",
+    "errorUrl": "",
+    "fallBackPublicKeys": [],
+    "fallBackUrl": [],
+    "labelsToDrop": [],
+    "logPusherTimerWithChannel": 3000,
+    "logsUrlKey": "https://logs.juspay.in/godel/analytics",
+    "logsUrlKeySandbox": "https://debug.logs.juspay.net/godel/analytics",
+    "priority": 1,
+    "publicKey": {
+      "e": "AQAB",
+      "kid": "production_log_public_key_26_03_2021",
+      "kty": "RSA",
+      "n": "zQjBRk_OxUOfoamCGGRaHn_kiCFjKJkUjnInvCHyh_6nwr98VEE9_QcZO07NjztTZYAGyqpO7TV08X9U2S8VOdQl6b1yVQHF1O6AhEFZTaxH71ro9ljVTvyhlzEfvPvuICLPKwu19N4g6jKU9TJpec63pwQ1GTrVS6L5JMLiYtlR5onMG6NEBtYwbFlpGKTlSJGaFQ6JHFV_S7Q3txReCVnD8AM5pHiORMYOsYz-zE4secDMrbILC9ESCCbIurc8SGXkinBwETm2HZbPZnnSsctuXPRDZXZnz9F8M-lKtE1xQS5l4mkvzLWPbFbIsRx_6VVJxFRAJ0Q4M1Gl6HcZ2Q"
+    },
+    "publicKeySandbox": {
+      "e": "AQAB",
+      "kid": "sandbox-log-24-03-2021",
+      "kty": "RSA",
+      "n": "zgKC-M2wFCMxpeoSEdqaFjhTYSbii2-tF0d3IRkuHB810cV_r17r0wZuI9biXjgT-TJdeGE6qdN_haqZFxY8RkQPaN8UXNtaM2MLPdfEPcpkY4E37NHp7a9OrcYYMmGSD_-w3rkmyzkjinqWHhlOnAObQWn5bw0jy4jF6JnGCEIyE-vkYsTZ9doId8ePsRFNEjsH45qSERF-GwQkDUVBOz7_BCKIodVs65eBLsl2I7JEP5vLvAu7hNZ-6AeXj8bFVqyflKVtN5ztNgpMgmgvWAqF4bH017b8Wocj1NelB_3XNq9E7cSJkMtbGfpZhmd1KzNnCx3yPPrGcbFuGEXV0Q"
+    },
+    "pushTimer": 10000,
+    "pusherTimerKey": "10.0",
+    "retryAttempts": 3,
+    "sessioniseTimer": 2000,
+    "shouldPush": true,
+    "workingLogger": "json-array"
+  },
+  "preRenderConfig": {
+    "common": "1.0",
+    "meesho": "1.0"
+  },
+  "runHealthCheck": false,
+  "safemode": {
+    "blacklist": {
+      "sdkVersions": [
+        "2.0.0",
+        "2.0.1",
+        "2.0.2",
+        "2.0.3",
+        "2.0.4",
+        "2.1.0",
+        "2.1.1",
+        "2.1.2"
+      ]
+    },
+    "enabled": false
+  },
+  "sequentialLoadClients": [],
+  "sequentialLoadEnable": false,
+  "uiFeatures": {
+    "nbListItemCaching": {
+      "bgCacheCapacity": 4,
+      "blacklistedClientIds": [],
+      "useCache": true
+    }
+  },
+  "unifiedLoader": false,
+  "upi": {
+    "enableRegisterService": false,
+    "mergeGstFromCache": false
+  },
+  "url": {
+    "activeActiveDomain": {
+      "prod": "https://payments.juspay.in",
+      "sandbox": "https://payments.sandbox.juspay.in"
+    },
+    "api": {
+      "fallbackUrls": [
+        "https://api-ns3.juspay.in",
+        "https://public.releases.juspay.in/wapi"
+      ],
+      "prod": "https://public.releases.juspay.in/wapi",
+      "production_static1": "https://api-ns1.juspay.in",
+      "sandbox": "https://sandbox.juspay.in"
+    },
+    "assets": {
+      "prod": "https://assets.juspay.in",
+      "sandbox": "https://sandbox.assets.juspay.in"
+    },
+    "endUrl": {
+      "prod": [
+        "https://olamoney.com",
+        "https://www.reload.in/recharge/",
+        ".*www.reload.in/payment/f.*",
+        ".*sandbox.juspay.in\\/thankyou.*",
+        ".*wallet.juspay.dev:8080/recharge/payment.*",
+        ".*www.foodstag.in\\/payment-gateway\\/handle-payment.*",
+        ".*sandbox.juspay.in\\/end.*",
+        ".*voonik.org\\/checkout\\/juspay_callback",
+        ".*localhost.*",
+        ".*api.juspay.in\\/end.*"
+      ],
+      "sandbox": [
+        "https://olamoney.com",
+        "https://www.reload.in/recharge/",
+        ".*www.reload.in/payment/f.*",
+        ".*sandbox.juspay.in\\/thankyou.*",
+        ".*wallet.juspay.dev:8080/recharge/payment.*",
+        ".*www.foodstag.in\\/payment-gateway\\/handle-payment.*",
+        ".*sandbox.juspay.in\\/end.*",
+        ".*voonik.org\\/checkout\\/juspay_callback",
+        ".*localhost.*",
+        ".*api.juspay.in\\/end.*"
+      ]
+    },
+    "webReleaseDomain": {
+      "prod": "https://public.releases.juspay.in",
+      "sandbox": "https://sandbox.assets.juspay.in"
+    }
+  },
+  "useCommitClientIds": {},
+  "variant_ids": [],
+  "version": "1.62.2",
+  "whiteListedEventsV2": []
+}

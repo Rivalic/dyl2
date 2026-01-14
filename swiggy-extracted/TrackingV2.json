@@ -1,0 +1,58 @@
+{
+    "statusCode": 0,
+    "statusMessage": "done successfully",
+    "data": {
+        "order_id": "30014754660",
+        "delivery_status": "unassigned",
+        "restaurant": {
+            "lat": "27.8374445",
+            "lng": "76.17257740000002"
+        },
+        "billing_address": {
+            "lat": "27.818392",
+            "lng": "76.165755"
+        },
+        "delivery_boy": {
+            "lat": "",
+            "lng": ""
+        },
+        "batched_order_message": "",
+        "message": "Awaiting restaurant confirmation. Delivery Executive will be assigned shortly",
+        "message_position_text": "Order Received",
+        "message_position_number": "1",
+        "flag_for_expand": "0",
+        "show_eta": false,
+        "expected_time": 0,
+        "orderState": 1,
+        "swiggy_assured": "0",
+        "order_total": 23,
+        "order_items_count": 1,
+        "configurations": {
+            "poll_duration_secs_before_pickedup": 45,
+            "poll_duration_secs_after_pickedup": 30
+        },
+        "batched_destinations": [],
+        "annotation_image_url": "set/others/annotation/icon/url/from/cms",
+        "order_new_state_sequence": {},
+        "order_state_sequence": {
+            "1": {
+                "name": "Order Received",
+                "icon": "image_id"
+            },
+            "2": {
+                "name": "Food Is Being Prepared",
+                "icon": "image_id"
+            },
+            "3": {
+                "name": "Order Picked Up",
+                "icon": "image_id"
+            },
+            "4": {
+                "name": "Order Delivered",
+                "icon": "image_id"
+            }
+        },
+        "abCase": "B",
+        "on_time": false
+    },
+}

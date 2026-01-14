@@ -1,0 +1,30 @@
+{
+    "statusCode":200,
+    "statusMessage":"success",
+    "data":{
+        "order_id":"1148189392",
+        "location":{
+            "lat":12.951594,
+            "lng":77.622271
+        },
+        "delivery_exec_contact_number":"7760958652",
+        "delivery_exec_image_url":"https://de-docs.s3.amazonaws.com/photographs/16970.JPG",
+        "batched_destinations": [
+            {
+                "location": {
+                    "lat": 12.948,
+                    "lng": 77.6029
+                },
+                "status": "done"
+            },
+            {
+                "location": {
+                    "lat": 12.947,
+                    "lng": 77.62
+                },
+                "status": "in_progress"
+            }
+        ],
+        "batched_order_message":"Deliveringordernearby"
+    }
+}

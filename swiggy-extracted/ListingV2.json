@@ -1,0 +1,1400 @@
+{
+    "statusCode": 1,
+    "statusMessage": "done successfully",
+    "data": {
+        "cacheExpiryTime": 300,
+        "pages": 1,
+        "pageIndex": 0,
+        "scrubber": 0,
+        "filters": [
+            {
+                "type": "FilterWidget",
+                "title": "Show Restaurants With",
+                "key": "SHOW_RESTAURANTS_WITH",
+                "configType": "checkbox",
+                "visible": 1,
+                "options": [
+                    {
+                        "option": "Pure Veg",
+                        "selected": 0,
+                        "visible": 1
+                    }
+                ]
+            },
+            {
+                "type": "FilterWidget",
+                "title": "Cuisines",
+                "key": "CUISINES",
+                "configType": "checkbox",
+                "visible": 1,
+                "options": [
+                    {
+                        "option": "Andhra",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "Biryani",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "Chinese",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "Fast Food",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "Goan",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "North Indian",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "Seafood",
+                        "selected": 0,
+                        "visible": 1
+                    },
+                    {
+                        "option": "Thai",
+                        "selected": 0,
+                        "visible": 1
+                    }
+                ]
+            }
+        ],
+        "sorts": [
+            {
+                "type": "SortWidget",
+                "key": "RELEVANCE",
+                "title": "Relevance",
+                "selected": 1,
+                "visible": 1
+            },
+            {
+                "type": "SortWidget",
+                "key": "COST_FOR_TWO",
+                "title": "Cost For Two",
+                "selected": 0,
+                "visible": 1
+            },
+            {
+                "type": "SortWidget",
+                "key": "DELIVERY_TIME",
+                "title": "Delivery Time",
+                "selected": 0,
+                "visible": 1
+            },
+            {
+                "type": "SortWidget",
+                "key": "RATING",
+                "title": "Rating",
+                "selected": 0,
+                "visible": 1
+            }
+        ],
+        "configs": {
+            "ribbons": {
+                "PREORDER": {
+                    "type": "PREORDER",
+                    "text": "Preorder",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#d53d4c",
+                    "bottomBackgroundColor": "#af2330",
+                    "priority": 3
+                },
+                "EXCLUSIVE": {
+                    "type": "EXCLUSIVE",
+                    "text": "Exclusive",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#fa4a5b",
+                    "bottomBackgroundColor": "#d12a3b",
+                    "priority": 2
+                },
+                "NEW": {
+                    "type": "NEW",
+                    "text": "Newly Added",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#d53d4c",
+                    "bottomBackgroundColor": "#af2330",
+                    "priority": 4
+                },
+                "REPEAT": {
+                    "type": "REPEAT",
+                    "text": "Repeat",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#D53D4C",
+                    "bottomBackgroundColor": "#B02331",
+                    "priority": 6
+                },
+                "CLOUD": {
+                    "type": "CLOUD",
+                    "text": "Daily Menus",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#fa4a5b",
+                    "bottomBackgroundColor": "#d12a3b",
+                    "priority": 5
+                },
+                "PREMIUM": {
+                    "type": "PREMIUM",
+                    "text": "Premium",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#8a584b",
+                    "bottomBackgroundColor": "#583229",
+                    "priority": 7
+                },
+                "PROMOTED": {
+                    "type": "PROMOTED",
+                    "text": "Promoted",
+                    "textColor": "#ffffff",
+                    "imageId": "sfefefefeegeg",
+                    "topBackgroundColor": "#3a3c41",
+                    "bottomBackgroundColor": "#1e2023",
+                    "priority": 1
+                }
+            },
+            "croutons": {
+                "SERVICEABLE_WITH_BANNER": {
+                    "type": "Crouton",
+                    "bgColor": "#282C3F",
+                    "icon": "de_busy_crouton_onm7gt",
+                    "textColor": "#ffffff",
+                    "title": "High Demand",
+                    "message": "Delivery executives are busy"
+                },
+                "RAIN": {
+                    "type": "Crouton",
+                    "bgColor": "#282C3F",
+                    "icon": "surge_listing_piuzrv",
+                    "textColor": "#ffffff",
+                    "title": "Bad Weather",
+                    "message": "${amount} extra levied on some restaurants"
+                }
+            }
+        },
+        "cards": [
+            {
+                "cardType": "storyCollection",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "storyCollection",
+                    "data": {
+                        "header": "Collection of Collection Header",
+                        "description": "Collection of Collection Description",
+                        "cards": [
+                            {
+                                "type": "storyElement",
+                                "subtype": "image",
+                                "data": {
+                                    "type": "RestaurantItemGroup",
+                                    "id": "2",
+                                    "imageId": "Burger_avumvw",
+                                    "header": "Grilled meat burgers that you didn't know existed",
+                                    "storyDepth": "Tandoor Hut, Hunan & 2 more",
+                                    "menuletCount": 4,
+                                    "link": "2",
+                                    "storyStartData": {
+                                        "depthOfStory": "4 PLACES TO ORDER FROM",
+                                        "description": "Grilled meat burgers that you didn't know existed",
+                                        "termsAndConditionsText": "T&C apply",
+                                        "swipeText": "SWIPE TO START"
+                                    },
+                                    "storyEndData": {
+                                        "title": "Still Hungry for more",
+                                        "description": "You might also be interested in following collections available.",
+                                        "cards": [
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "3",
+                                                    "imageId": "Cheesecake_aoxp3t",
+                                                    "header": "Sinful cheesecakes that will melt in your mouth",
+                                                    "storyDepth": "Tandoor Hut",
+                                                    "menuletCount": 1,
+                                                    "link": "3"
+                                                }
+                                            },
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "4",
+                                                    "imageId": "Kerala_lfwacv",
+                                                    "header": "A meal inspired from coast's of Kerela",
+                                                    "storyDepth": "Tandoor Hut",
+                                                    "menuletCount": 1,
+                                                    "link": "4"
+                                                }
+                                            },
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "5",
+                                                    "imageId": "Rolls_dyzfzj",
+                                                    "header": "Wrap it up under just Rs.99! ",
+                                                    "storyDepth": "Tandoor Hut",
+                                                    "menuletCount": 1,
+                                                    "link": "5"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "viewType": "Horizontal"
+                                }
+                            },
+                            {
+                                "type": "storyElement",
+                                "subtype": "image",
+                                "data": {
+                                    "type": "RestaurantItemGroup",
+                                    "id": "3",
+                                    "imageId": "Cheesecake_aoxp3t",
+                                    "header": "Sinful cheesecakes that will melt in your mouth",
+                                    "storyDepth": "Tandoor Hut",
+                                    "menuletCount": 1,
+                                    "link": "3",
+                                    "storyStartData": {
+                                        "depthOfStory": "1 PLACES TO ORDER FROM",
+                                        "description": "Sinful cheesecakes that will melt in your mouth",
+                                        "termsAndConditionsText": "T&C apply",
+                                        "swipeText": "SWIPE TO START"
+                                    },
+                                    "storyEndData": {
+                                        "title": "Still Hungry for more",
+                                        "description": "You might also be interested in following collections available.",
+                                        "cards": [
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "2",
+                                                    "imageId": "Burger_avumvw",
+                                                    "header": "Grilled meat burgers that you didn't know existed",
+                                                    "storyDepth": "Tandoor Hut, Hunan & 2 more",
+                                                    "menuletCount": 4,
+                                                    "link": "2",
+                                                    "viewType": "Horizontal"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "type": "storyElement",
+                                "subtype": "image",
+                                "data": {
+                                    "type": "RestaurantItemGroup",
+                                    "id": "4",
+                                    "imageId": "Kerala_lfwacv",
+                                    "header": "A meal inspired from coast's of Kerela",
+                                    "storyDepth": "Tandoor Hut",
+                                    "menuletCount": 1,
+                                    "link": "4",
+                                    "storyStartData": {
+                                        "depthOfStory": "1 PLACES TO ORDER FROM",
+                                        "description": "A meal inspired from coast's of Kerela",
+                                        "termsAndConditionsText": "T&C apply",
+                                        "swipeText": "SWIPE TO START"
+                                    },
+                                    "storyEndData": {
+                                        "title": "Still Hungry for more",
+                                        "description": "You might also be interested in following collections available."
+                                    }
+                                }
+                            },
+                            {
+                                "type": "storyElement",
+                                "subtype": "image",
+                                "data": {
+                                    "type": "RestaurantItemGroup",
+                                    "id": "5",
+                                    "imageId": "Rolls_dyzfzj",
+                                    "header": "Wrap it up under just Rs.99! ",
+                                    "storyDepth": "Tandoor Hut",
+                                    "menuletCount": 1,
+                                    "link": "5",
+                                    "storyStartData": {
+                                        "depthOfStory": "1 PLACES TO ORDER FROM",
+                                        "description": "Wrap it up under just Rs.99! ",
+                                        "termsAndConditionsText": "T&C apply",
+                                        "swipeText": "SWIPE TO START"
+                                    },
+                                    "storyEndData": {
+                                        "title": "Still Hungry for more",
+                                        "description": "You might also be interested in following collections available."
+                                    }
+                                }
+                            },
+                            {
+                                "type": "storyElement",
+                                "subtype": "image",
+                                "data": {
+                                    "type": "RestaurantItemGroup",
+                                    "id": "6",
+                                    "imageId": "Top-eats_maur5k",
+                                    "header": "Best Paneer Makhani's around Koramangla",
+                                    "storyDepth": "Tandoor Hut",
+                                    "menuletCount": 1,
+                                    "link": "6",
+                                    "storyStartData": {
+                                        "depthOfStory": "1 PLACES TO ORDER FROM",
+                                        "description": "Best Paneer Makhani's around Koramangla",
+                                        "termsAndConditionsText": "T&C apply",
+                                        "swipeText": "SWIPE TO START"
+                                    },
+                                    "storyEndData": {
+                                        "title": "Still Hungry for more",
+                                        "description": "You might also be interested in following collections available.",
+                                        "cards": [
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "2",
+                                                    "imageId": "Burger_avumvw",
+                                                    "header": "Grilled meat burgers that you didn't know existed",
+                                                    "storyDepth": "Tandoor Hut, Hunan & 2 more",
+                                                    "menuletCount": 4,
+                                                    "link": "2",
+                                                    "viewType": "Horizontal"
+                                                }
+                                            },
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "3",
+                                                    "imageId": "Cheesecake_aoxp3t",
+                                                    "header": "Sinful cheesecakes that will melt in your mouth",
+                                                    "storyDepth": "Tandoor Hut",
+                                                    "menuletCount": 1,
+                                                    "link": "3"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "type": "storyElement",
+                                "subtype": "image",
+                                "data": {
+                                    "type": "RestaurantItemGroup",
+                                    "id": "7",
+                                    "imageId": "Food-truck_vf5cfb",
+                                    "header": "Bangalore food truck Festival! Ends today",
+                                    "storyDepth": "Tandoor Hut",
+                                    "menuletCount": 1,
+                                    "link": "7",
+                                    "storyStartData": {
+                                        "depthOfStory": "1 PLACES TO ORDER FROM",
+                                        "description": "Bangalore food truck Festival! Ends today",
+                                        "termsAndConditionsText": "T&C apply",
+                                        "swipeText": "SWIPE TO START"
+                                    },
+                                    "storyEndData": {
+                                        "title": "Still Hungry for more",
+                                        "description": "You might also be interested in following collections available.",
+                                        "cards": [
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "4",
+                                                    "imageId": "Kerala_lfwacv",
+                                                    "header": "A meal inspired from coast's of Kerela",
+                                                    "storyDepth": "Tandoor Hut",
+                                                    "menuletCount": 1,
+                                                    "link": "4"
+                                                }
+                                            },
+                                            {
+                                                "type": "storyElement",
+                                                "subtype": "image",
+                                                "data": {
+                                                    "type": "RestaurantItemGroup",
+                                                    "id": "5",
+                                                    "imageId": "Rolls_dyzfzj",
+                                                    "header": "Wrap it up under just Rs.99! ",
+                                                    "storyDepth": "Tandoor Hut",
+                                                    "menuletCount": 1,
+                                                    "link": "5"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "cardType": "messageCard",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "messageCard",
+                    "data": {
+                        "message": "6 Restaurants"
+                    },
+                    "subtype": "sortedRestaurantCount",
+                    "sticky": 1
+                }
+            },
+            {
+                "cardType": "restaurant",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "restaurant",
+                    "data": {
+                        "type": "F",
+                        "id": "211",
+                        "name": "Tandoor Hut",
+                        "uuid": "1642a42e-6950-4cea-803f-2279dac8990d",
+                        "city": "1",
+                        "area": "Koramangala",
+                        "cloudinaryImageId": "t5f60aojptcci3o5uzhd",
+                        "cuisines": [
+                            "North Indian",
+                            "Chinese"
+                        ],
+                        "tags": [
+                            "aov-400-pn",
+                            "Paneer Butter Masala",
+                            "Veg Fried Rice",
+                            "Biryani2",
+                            "AOV350-500",
+                            "recommended_pizza",
+                            "reco_north_indian",
+                            "reco_chicken_biryani",
+                            "reco_rolls",
+                            "reco_south_indian",
+                            "Premium_Restros"
+                        ],
+                        "costForTwo": 40000,
+                        "costForTwoString": "₹400 FOR TWO",
+                        "deliveryTime": 55,
+                        "minDeliveryTime": 55,
+                        "maxDeliveryTime": 65,
+                        "slaString": "55 MINS",
+                        "lastMileTravel": 3.46,
+                        "slugs": {
+                            "restaurant": "tandoor-hut-5th-block-koramangala",
+                            "city": "bangalore"
+                        },
+                        "cityState": "1",
+                        "address": "477, KHB Colony, 5th Block, Koramangala",
+                        "locality": "5th Block",
+                        "parentId": 928,
+                        "unserviceable": false,
+                        "veg": false,
+                        "select": false,
+                        "favorite": false,
+                        "tradeCampaignHeaders": [],
+                        "aggregatedDiscountInfo": {
+                            "header": "Default Header",
+                            "shortDescriptionList": [
+                                {
+                                    "meta": "Free Del for all orders",
+                                    "discountType": "FREE_DELIVERY",
+                                    "operationType" : "RESTAURANT"
+                                },
+                                {
+                                    "meta": "Freebie for all orders",
+                                    "discountType": "Percentage",
+                                    "operationType" : "SUPER"
+                                }
+                            ],
+                            "descriptionList": [
+                                {
+                                    "meta": "Free Del for all orders above 99",
+                                    "discountType": "FREE_DELIVERY",
+                                    "operationType" : "RESTAURANT"
+                                },
+                                {
+                                    "meta": "Freebie for all orders above 299",
+                                    "discountType": "Freebie",
+                                    "operationType" : "SUPER"
+                                },
+                                {
+                                    "meta": "20% off above Rs 199",
+                                    "discountType": "Percentage",
+                                    "operationType" : "RESTAURANT"
+                                }
+                            ]
+                        },
+                        "chain": [],
+                        "feeDetails": {
+                            "fees": [
+                                {
+                                    "name": "fix",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "distance",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "time",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "special",
+                                    "fee": 0,
+                                    "message": null
+                                }
+                            ],
+                            "totalFees": 0,
+                            "message": null,
+                            "title": "Delivery Charge",
+                            "amount": "0",
+                            "icon": null
+                        },
+                        "availability": {
+                            "opened": true,
+                            "nextOpenMessage": null,
+                            "nextCloseMessage": null
+                        },
+                        "longDistanceEnabled": 0,
+                        "rainMode": "NONE",
+                        "promoted": false,
+                        "avgRating": "--",
+                        "totalRatings": 10888,
+                        "new": false
+                    },
+                    "subtype": "basic"
+                }
+            },
+            {
+                "cardType": "nuxCard",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "nuxCard",
+                    "subtype": "listing",
+                    "collapse": 1,
+                    "data": {
+                        "id": "40",
+                        "icon": "SuperNewLogo_loz2q9",
+                        "title": "Swiggy SUPER. Your key to Unlimited Free Delivery.",
+                        "subtitle": "Buy SUPER for Unlimited Free Delivery, No Surge fee(EVER) and Exclusive Offers(the best kind) :P",
+                        "description": "Buy Super for Unlimited Free Delivery, No Surge fee(EVER) and Exclusive Offers(the best kind) :P",
+                        "bgColor": "#0c5260",
+                        "bgImage": "super_nudge_bg_aevb9z",
+                        "defaultFontColor": "#FFFFFF",
+                        "cta": {
+                            "type": "swiggy_super",
+                            "link": "swiggy_super",
+                            "text": "Get Super Now"
+                        }
+                    }
+                }
+            },
+            {
+                "cardType": "smallNudgeCard",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "smallNudgeCard",
+                    "subtype": "basic",
+                    "data": {
+                        "id": "40",
+                        "icon": "SuperNewLogo_loz2q9",
+                        "title": "Your Super Expired",
+                        "subtitle": "Get Super Again",
+                        "bgColor": "#0c5260",
+                        "defaultFontColor": "testColor",
+                        "cta": {
+                            "type": "swiggy_renewal",
+                            "link": "swiggy_renewal",
+                            "text": "Get Super Now"
+                        }
+                    }
+                }
+            },
+            {
+                "cardType": "restaurant",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "restaurant",
+                    "data": {
+                        "type": "F",
+                        "id": "212",
+                        "name": "Hunan",
+                        "uuid": "3272c185-919b-401a-9270-074b9428bdc9",
+                        "city": "1",
+                        "area": "Koramangala",
+                        "cloudinaryImageId": "n7rbvub4yvgjd4sv0g21",
+                        "cuisines": [
+                            "Chinese",
+                            "Seafood",
+                            "Thai"
+                        ],
+                        "tags": [
+                            "paid_ad",
+                            "aov-400-pn",
+                            "test-swap-1",
+                            "Biryani2",
+                            "AOV>500",
+                            "Premium_Restros"
+                        ],
+                        "costForTwo": 100000,
+                        "costForTwoString": "₹1000 FOR TWO",
+                        "deliveryTime": 68,
+                        "minDeliveryTime": 68,
+                        "maxDeliveryTime": 78,
+                        "slaString": "68 MINS",
+                        "lastMileTravel": 3.877,
+                        "slugs": {
+                            "restaurant": "hunan-5th-block-koramangala",
+                            "city": "bangalore"
+                        },
+                        "cityState": "1",
+                        "address": "123, 1st Floor, KHB Colony, Opposite California Pizza Kitchen, Koramangala, 5th Block, Bangalore",
+                        "locality": "5th Block",
+                        "parentId": 2084,
+                        "unserviceable": false,
+                        "veg": false,
+                        "select": false,
+                        "favorite": false,
+                        "tradeCampaignHeaders": [],
+                        "chain": [],
+                        "feeDetails": {
+                            "fees": [
+                                {
+                                    "name": "fix",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "distance",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "time",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "special",
+                                    "fee": 0,
+                                    "message": null
+                                }
+                            ],
+                            "totalFees": 0,
+                            "message": null,
+                            "title": "Delivery Charge",
+                            "amount": "0",
+                            "icon": null
+                        },
+                        "availability": {
+                            "opened": true,
+                            "nextOpenMessage": null,
+                            "nextCloseMessage": null
+                        },
+                        "longDistanceEnabled": 1,
+                        "rainMode": "NONE",
+                        "promoted": false,
+                        "avgRating": "--",
+                        "totalRatings": 1006,
+                        "new": false
+                    },
+                    "subtype": "basic"
+                }
+            },
+            {
+                "cardType": "restaurant",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "restaurant",
+                    "data": {
+                        "type": "F",
+                        "id": "213",
+                        "name": "Maria's Goan Kitchen",
+                        "uuid": "134a6274-29c4-44c9-beeb-f20249d55a3a",
+                        "city": "1",
+                        "area": "Koramangala",
+                        "cloudinaryImageId": "aweiit8cie6noicab8yd",
+                        "cuisines": [
+                            "Goan"
+                        ],
+                        "tags": [
+                            "Paneer Butter Masala",
+                            "Veg Fried Rice",
+                            "Biryani2",
+                            "Butter Chicken",
+                            "Ice Cream",
+                            "AOV>500",
+                            "reco_north_indian",
+                            "reco_chicken_biryani",
+                            "reco_icecreams",
+                            "Premium_Restros"
+                        ],
+                        "costForTwo": 50000,
+                        "costForTwoString": "₹500 FOR TWO",
+                        "deliveryTime": 60,
+                        "minDeliveryTime": 60,
+                        "maxDeliveryTime": 70,
+                        "slaString": "60 MINS",
+                        "lastMileTravel": 3.83,
+                        "slugs": {
+                            "restaurant": "marias-goan-kitchen-ejipura-koramangala",
+                            "city": "bangalore"
+                        },
+                        "cityState": "1",
+                        "address": "#360, 1st Main, 7th block Koramangala Bangalore 560095",
+                        "locality": "7th Block",
+                        "parentId": 0,
+                        "unserviceable": false,
+                        "veg": false,
+                        "select": false,
+                        "favorite": false,
+                        "tradeCampaignHeaders": [],
+                        "chain": [],
+                        "feeDetails": {
+                            "fees": [
+                                {
+                                    "name": "fix",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "distance",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "time",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "special",
+                                    "fee": 0,
+                                    "message": null
+                                }
+                            ],
+                            "totalFees": 0,
+                            "message": null,
+                            "title": "Delivery Charge",
+                            "amount": "0",
+                            "icon": null
+                        },
+                        "availability": {
+                            "opened": true,
+                            "nextOpenMessage": null,
+                            "nextCloseMessage": null
+                        },
+                        "longDistanceEnabled": 1,
+                        "rainMode": "NONE",
+                        "promoted": false,
+                        "avgRating": "--",
+                        "totalRatings": 2522,
+                        "new": false
+                    },
+                    "subtype": "basic"
+                }
+            },
+            {
+                "cardType": "restaurant",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "restaurant",
+                    "data": {
+                        "type": "F",
+                        "id": "214",
+                        "name": "Kritunga",
+                        "uuid": "496f2363-82d4-4c6e-be37-3a1c4db873c4",
+                        "city": "1",
+                        "area": "Koramangala",
+                        "cloudinaryImageId": "fkatckv11gv0kiypxegl",
+                        "cuisines": [
+                            "Andhra",
+                            "Biryani"
+                        ],
+                        "tags": [
+                            "aov-400-pn",
+                            "Biryani",
+                            "Paneer Butter Masala",
+                            "Veg Fried Rice",
+                            "Biryani2",
+                            "Butter Chicken",
+                            "AOV>500",
+                            "reco_north_indian",
+                            "reco_chicken_biryani",
+                            "reco_south_indian",
+                            "Premium_Restros"
+                        ],
+                        "costForTwo": 50000,
+                        "costForTwoString": "₹500 FOR TWO",
+                        "deliveryTime": 53,
+                        "minDeliveryTime": 53,
+                        "maxDeliveryTime": 63,
+                        "slaString": "53 MINS",
+                        "lastMileTravel": 3.237,
+                        "slugs": {
+                            "restaurant": "kritunga-5th-block-koramangala",
+                            "city": "bangalore"
+                        },
+                        "cityState": "1",
+                        "address": "101, Vikas Tech Park, 5th block, 1st floor, Next to Jyothi nivas college, Koramangala, Bangalore - 560095",
+                        "locality": "5th Block",
+                        "parentId": 572,
+                        "unserviceable": false,
+                        "veg": false,
+                        "select": false,
+                        "favorite": false,
+                        "tradeCampaignHeaders": [],
+                        "chain": [],
+                        "feeDetails": {
+                            "fees": [
+                                {
+                                    "name": "fix",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "distance",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "time",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "special",
+                                    "fee": 0,
+                                    "message": null
+                                }
+                            ],
+                            "totalFees": 0,
+                            "message": null,
+                            "title": "Delivery Charge",
+                            "amount": "0",
+                            "icon": null
+                        },
+                        "availability": {
+                            "opened": true,
+                            "nextOpenMessage": null,
+                            "nextCloseMessage": null
+                        },
+                        "longDistanceEnabled": 0,
+                        "rainMode": "NONE",
+                        "promoted": false,
+                        "avgRating": "--",
+                        "totalRatings": 9463,
+                        "new": false
+                    },
+                    "subtype": "basic"
+                }
+            },
+            {
+                "cardType": "restaurant",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "restaurant",
+                    "data": {
+                        "type": "F",
+                        "id": "216",
+                        "name": "China Bowl",
+                        "uuid": "18493cb7-9e2e-452d-9495-b349148da232",
+                        "city": "1",
+                        "area": "Koramangala",
+                        "cloudinaryImageId": "jxuhycbjx8hq6x1hcfnp",
+                        "cuisines": [
+                            "Chinese"
+                        ],
+                        "tags": [
+                            "Veg Fried Rice",
+                            "Biryani2",
+                            "AOV>500",
+                            "reco_chicken_biryani",
+                            "Premium_Restros"
+                        ],
+                        "costForTwo": 70000,
+                        "costForTwoString": "₹700 FOR TWO",
+                        "deliveryTime": 58,
+                        "minDeliveryTime": 58,
+                        "maxDeliveryTime": 68,
+                        "slaString": "58 MINS",
+                        "lastMileTravel": 3.999,
+                        "slugs": {
+                            "restaurant": "china-bowl-6th-block-koramangala",
+                            "city": "bangalore"
+                        },
+                        "cityState": "1",
+                        "address": "99, 2nd Floor, ARD Complex, 5th Cross,Koramangala 6th Block 6th Block, Koramangala 6th Block, Bangalore",
+                        "locality": "6th Block",
+                        "parentId": 3671,
+                        "unserviceable": false,
+                        "veg": false,
+                        "select": false,
+                        "favorite": false,
+                        "tradeCampaignHeaders": [],
+                        "aggregatedDiscountInfo": {
+                            "header": "Default Header",
+                            "shortDescriptionList": [
+                                {
+                                    "meta": "Free Del for shgfsf shgfshfs sgsfgsf all super orders",
+                                    "discountType": "FREE_DELIVERY",
+                                    "operationType" : "RESTAURANT"
+                                },
+                                {
+                                    "meta": "Freebie shgfhjsf sfgshfg snsgjhfgsjf sjhfgsjfg for all orders",
+                                    "discountType": "Freebie",
+                                    "operationType" : "SUPER"
+                                }
+                            ],
+                            "descriptionList": [
+                                {
+                                    "meta": "Free Del for all orders above 99",
+                                    "discountType": "FREE_DELIVERY",
+                                    "operationType" : "RESTAURANT"
+                                },
+                                {
+                                    "meta": "Freebie for all orders above 299",
+                                    "discountType": "Freebie",
+                                    "operationType" : "SUPER"
+                                },
+                                {
+                                    "meta": "20% off above Rs 199",
+                                    "discountType": "Percentage",
+                                    "operationType" : "RESTAURANT"
+                                }
+                            ]
+                        },
+                        "chain": [],
+                        "feeDetails": {
+                            "fees": [
+                                {
+                                    "name": "fix",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "distance",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "time",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "special",
+                                    "fee": 0,
+                                    "message": null
+                                }
+                            ],
+                            "totalFees": 0,
+                            "message": null,
+                            "title": "Delivery Charge",
+                            "amount": "0",
+                            "icon": null
+                        },
+                        "availability": {
+                            "opened": true,
+                            "nextOpenMessage": null,
+                            "nextCloseMessage": null
+                        },
+                        "longDistanceEnabled": 1,
+                        "rainMode": "NONE",
+                        "promoted": false,
+                        "avgRating": "--",
+                        "totalRatings": 4629,
+                        "new": false
+                    },
+                    "subtype": "basic"
+                }
+            },
+            {
+                "cardType": "restaurant",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "restaurant",
+                    "data": {
+                        "type": "F",
+                        "id": "218",
+                        "name": "Anand Sweets and Savouries",
+                        "uuid": "ee793670-a829-46d8-901f-ce5a5189e330",
+                        "city": "1",
+                        "area": "Koramangala",
+                        "cloudinaryImageId": "t4jjutyonabnfg83i4c4",
+                        "cuisines": [
+                            "North Indian",
+                            "Fast Food"
+                        ],
+                        "tags": [
+                            "Fast Food",
+                            "Biryani2",
+                            "Sandwich",
+                            "AOV200-350",
+                            "recommended_pizza",
+                            "reco_north_indian",
+                            "reco_rolls",
+                            "reco_icecreams",
+                            "reco_south_indian"
+                        ],
+                        "costForTwo": 30000,
+                        "costForTwoString": "₹300 FOR TWO",
+                        "deliveryTime": 56,
+                        "minDeliveryTime": 56,
+                        "maxDeliveryTime": 66,
+                        "slaString": "56 MINS",
+                        "lastMileTravel": 4.066,
+                        "slugs": {
+                            "restaurant": "anand-sweets-and-savouries-5th-block-koramangala",
+                            "city": "bangalore"
+                        },
+                        "cityState": "1",
+                        "address": "143/A, 60 Feet Road, 5th Block, Koramangala, Bengaluru, Karnataka 560034",
+                        "locality": "5th Block",
+                        "parentId": 53,
+                        "unserviceable": false,
+                        "veg": true,
+                        "select": false,
+                        "favorite": false,
+                        "tradeCampaignHeaders": [],
+                        "chain": [],
+                        "feeDetails": {
+                            "fees": [
+                                {
+                                    "name": "fix",
+                                    "fee": 5000,
+                                    "message": "₹50 fixed fee applicable###fixed_fee_nhuqgw###${total_fee}###Delivery  Fee"
+                                },
+                                {
+                                    "name": "distance",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "time",
+                                    "fee": 0,
+                                    "message": null
+                                },
+                                {
+                                    "name": "special",
+                                    "fee": 0,
+                                    "message": null
+                                }
+                            ],
+                            "totalFees": 5000,
+                            "message": "₹50 fixed fee applicable",
+                            "title": "Delivery  Fee",
+                            "amount": "₹50",
+                            "icon": "fixed_fee_nhuqgw"
+                        },
+                        "availability": {
+                            "opened": true,
+                            "nextOpenMessage": null,
+                            "nextCloseMessage": null
+                        },
+                        "longDistanceEnabled": 1,
+                        "rainMode": "NONE",
+                        "promoted": false,
+                        "avgRating": "--",
+                        "totalRatings": 15278,
+                        "new": false
+                    },
+                    "subtype": "basic"
+                }
+            },
+            {
+                "cardType": "imageCard",
+                "layoutAlignmentType": "VERTICAL",
+                "data": {
+                    "type": "imageCard",
+                    "subtype": "static",
+                    "data": {
+                        "imageId": "footer_graphic_vxojqs"
+                    }
+                }
+            }
+        ],
+        "preorderSlots":
+        {
+            "date": 1535049000000,
+            "slots": [
+                {
+                    "startTime": 1535076000000,
+                    "endTime": 1535077800000
+                },
+                {
+                    "startTime": 1535076900000,
+                    "endTime": 1535078700000
+                },
+                {
+                    "startTime": 1535077800000,
+                    "endTime": 1535079600000
+                },
+                {
+                    "startTime": 1535078700000,
+                    "endTime": 1535080500000
+                },
+                {
+                    "startTime": 1535079600000,
+                    "endTime": 1535081400000
+                },
+                {
+                    "startTime": 1535080500000,
+                    "endTime": 1535082300000
+                },
+                {
+                    "startTime": 1535081400000,
+                    "endTime": 1535083200000
+                },
+                {
+                    "startTime": 1535082300000,
+                    "endTime": 1535084100000
+                },
+                {
+                    "startTime": 1535083200000,
+                    "endTime": 1535085000000
+                },
+                {
+                    "startTime": 1535084100000,
+                    "endTime": 1535085900000
+                },
+                {
+                    "startTime": 1535085000000,
+                    "endTime": 1535086800000
+                },
+                {
+                    "startTime": 1535085900000,
+                    "endTime": 1535087700000
+                },
+                {
+                    "startTime": 1535086800000,
+                    "endTime": 1535088600000
+                },
+                {
+                    "startTime": 1535087700000,
+                    "endTime": 1535089500000
+                },
+                {
+                    "startTime": 1535088600000,
+                    "endTime": 1535090400000
+                },
+                {
+                    "startTime": 1535089500000,
+                    "endTime": 1535091300000
+                },
+                {
+                    "startTime": 1535090400000,
+                    "endTime": 1535092200000
+                },
+                {
+                    "startTime": 1535091300000,
+                    "endTime": 1535093100000
+                },
+                {
+                    "startTime": 1535092200000,
+                    "endTime": 1535094000000
+                },
+                {
+                    "startTime": 1535093100000,
+                    "endTime": 1535094900000
+                },
+                {
+                    "startTime": 1535094000000,
+                    "endTime": 1535095800000
+                },
+                {
+                    "startTime": 1535094900000,
+                    "endTime": 1535096700000
+                },
+                {
+                    "startTime": 1535095800000,
+                    "endTime": 1535097600000
+                },
+                {
+                    "startTime": 1535096700000,
+                    "endTime": 1535098500000
+                },
+                {
+                    "startTime": 1535097600000,
+                    "endTime": 1535099400000
+                },
+                {
+                    "startTime": 1535098500000,
+                    "endTime": 1535100300000
+                },
+                {
+                    "startTime": 1535099400000,
+                    "endTime": 1535101200000
+                },
+                {
+                    "startTime": 1535100300000,
+                    "endTime": 1535102100000
+                },
+                {
+                    "startTime": 1535101200000,
+                    "endTime": 1535103000000
+                },
+                {
+                    "startTime": 1535102100000,
+                    "endTime": 1535103900000
+                },
+                {
+                    "startTime": 1535103000000,
+                    "endTime": 1535104800000
+                },
+                {
+                    "startTime": 1535103900000,
+                    "endTime": 1535105700000
+                },
+                {
+                    "startTime": 1535104800000,
+                    "endTime": 1535106600000
+                },
+                {
+                    "startTime": 1535105700000,
+                    "endTime": 1535107500000
+                },
+                {
+                    "startTime": 1535106600000,
+                    "endTime": 1535108400000
+                },
+                {
+                    "startTime": 1535107500000,
+                    "endTime": 1535109300000
+                },
+                {
+                    "startTime": 1535108400000,
+                    "endTime": 1535110200000
+                },
+                {
+                    "startTime": 1535109300000,
+                    "endTime": 1535111100000
+                },
+                {
+                    "startTime": 1535110200000,
+                    "endTime": 1535112000000
+                },
+                {
+                    "startTime": 1535111100000,
+                    "endTime": 1535112900000
+                },
+                {
+                    "startTime": 1535112000000,
+                    "endTime": 1535113800000
+                },
+                {
+                    "startTime": 1535112900000,
+                    "endTime": 1535114700000
+                },
+                {
+                    "startTime": 1535113800000,
+                    "endTime": 1535115600000
+                },
+                {
+                    "startTime": 1535114700000,
+                    "endTime": 1535116500000
+                },
+                {
+                    "startTime": 1535115600000,
+                    "endTime": 1535117400000
+                },
+                {
+                    "startTime": 1535116500000,
+                    "endTime": 1535118300000
+                },
+                {
+                    "startTime": 1535117400000,
+                    "endTime": 1535119200000
+                },
+                {
+                    "startTime": 1535118300000,
+                    "endTime": 1535120100000
+                },
+                {
+                    "startTime": 1535119200000,
+                    "endTime": 1535121000000
+                },
+                {
+                    "startTime": 1535120100000,
+                    "endTime": 1535121900000
+                },
+                {
+                    "startTime": 1535121000000,
+                    "endTime": 1535122800000
+                },
+                {
+                    "startTime": 1535121900000,
+                    "endTime": 1535123700000
+                },
+                {
+                    "startTime": 1535122800000,
+                    "endTime": 1535124600000
+                },
+                {
+                    "startTime": 1535123700000,
+                    "endTime": 1535125500000
+                },
+                {
+                    "startTime": 1535124600000,
+                    "endTime": 1535126400000
+                },
+                {
+                    "startTime": 1535125500000,
+                    "endTime": 1535127300000
+                },
+                {
+                    "startTime": 1535126400000,
+                    "endTime": 1535128200000
+                },
+                {
+                    "startTime": 1535127300000,
+                    "endTime": 1535129100000
+                },
+                {
+                    "startTime": 1535128200000,
+                    "endTime": 1535130000000
+                },
+                {
+                    "startTime": 1535129100000,
+                    "endTime": 1535130900000
+                },
+                {
+                    "startTime": 1535130000000,
+                    "endTime": 1535131800000
+                }
+            ]
+        }
+        ,
+        "slotInvalid": false
+    },
+    "tid": "c99124d4-62a4-4d0e-aacf-8e8c12518c27",
+    "sid": "71p1d96a-f22f-4401-982a-c6bbb656c26b",
+    "deviceId": "f52200b1-33d4-4f19-89fa-cd2b11c5bee7"
+}

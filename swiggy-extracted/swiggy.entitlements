@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aps-environment</key>
+	<string>development</string>
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:www.swiggy.com</string>
+		<string>applinks:swiggy.com</string>
+		<string>webcredentials:swiggy.com</string>
+		<string>webcredentials:www.swiggy.com</string>
+		<string>applinks:swiggy.onelink.me</string>
+		<string>applinks:stores.swiggy.com</string>
+		<string>applinks:www.stores.swiggy.com</string>
+		<string>applinks:instachef.swiggy.com</string>
+		<string>applinks:*.mini.store</string>
+		<string>applinks:*.mini.site</string>
+		<string>applinks:swiggy.sng.link</string>
+	</array>
+	<key>com.apple.developer.authentication-services.autofill-credential-provider</key>
+	<true/>
+	<key>com.apple.developer.siri</key>
+	<true/>
+	<key>com.apple.developer.upi-device-validation</key>
+    <true/>
+	<key>com.apple.developer.usernotifications.time-sensitive</key>
+	<true/>
+	<key>com.apple.security.application-groups</key>
+	<array>
+		<string>group.com.notificationserivce</string>
+		<string>group.swiggy.extension</string>
+	</array>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>9X7BN9YP4C.bundl.swiggy.authShare</string>
+	</array>
+</dict>
+</plist>

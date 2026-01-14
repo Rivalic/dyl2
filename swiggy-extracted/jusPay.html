@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://api.juspay.in/pay.js"></script>
+    </head>
+    <body>
+        <form class="juspay_inline_form" id="payment_form" style="opacity:0">
+            <input type="hidden" class="merchant_id" id="merchant_elem_id" value="guest"></input></br>
+            <input type="hidden" class="order_id" id="order_elem_id" value="guest_order"/></input></br>
+            <input type="text" class="card_number" id="card_number_elem_id" placeholder="Card number"></input></br>
+            <input type="text" class="name_on_card" id="card_name_elem_id" placeholder="Cardholder name"></input></br>
+            <input type="text" class="card_exp_month" id="card_expiry_month_elem_id" placeholder="MM"></input></br>
+            <input type="text" class="card_exp_year" id="card_expiry_year_elem_id" placeholder="YYYY"></input></br>
+            <input type="text" class="security_code" id="card_cvv_elem_id" placeholder="CVV"></input></br>
+            <input type="checkbox" class="juspay_locker_save" id="card_save_elem_id"></input> Save card information</br>
+            <button type="submit" class="make_payment" id="make_cc_payment">Pay</button></br>
+        </form>
+        <script type="text/javascript">
+            Juspay.Setup({
+                         payment_form: "#payment_form",
+                         success_handler: function(status) {
+                            alert("Success!");
+                         },
+                         error_handler: function(error_code, error_message, bank_error_code,
+                                                 bank_error_message, gateway_id) {
+                            alert("Failure!");
+                         }
+                         })
+        </script>
+    </body>
+</html>
