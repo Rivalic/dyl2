@@ -35,14 +35,20 @@ jobs:
         cd /tmp/insert_dylib
         xcodebuild -configuration Release
         
-        # Find where the binary is
-        INSERT_DYLIB_BIN=$(find . -name insert_dylib -type f -perm +111 | head -n 1)
-        if [ -f "$INSERT_DYLIB_BIN" ]; then
-          echo "Found insert_dylib at $INSERT_DYLIB_BIN"
-          sudo cp "$INSERT_DYLIB_BIN" /usr/local/bin/
+        # Find where the binary is (macOS find doesn't support -perm +111)
+        if [ -f "build/Release/insert_dylib" ]; then
+          echo "Found insert_dylib at build/Release/insert_dylib"
+          sudo cp "build/Release/insert_dylib" /usr/local/bin/
         else
-          echo "Error: insert_dylib binary not found after build!"
-          exit 1
+          echo "Looking for insert_dylib binary..."
+          INSERT_DYLIB_BIN=$(find . -name insert_dylib -type f | head -n 1)
+          if [ -f "$INSERT_DYLIB_BIN" ]; then
+            echo "Found insert_dylib at $INSERT_DYLIB_BIN"
+            sudo cp "$INSERT_DYLIB_BIN" /usr/local/bin/
+          else
+            echo "Error: insert_dylib binary not found!"
+            exit 1
+          fi
         fi
         
         # Verify installation
