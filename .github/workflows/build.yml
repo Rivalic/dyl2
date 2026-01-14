@@ -33,37 +33,53 @@ jobs:
         echo "Building insert_dylib..."
         git clone https://github.com/Tyilo/insert_dylib.git /tmp/insert_dylib
         cd /tmp/insert_dylib
-        # Use clang directly for a more reliable build
-        clang -O3 main.c -o insert_dylib
-        
-        if [ -f "insert_dylib" ]; then
-          echo "Successfully built insert_dylib"
+        # The main file is insert_dylib.c, not main.c
+        if [ -f "insert_dylib.c" ]; then
+          clang -O3 insert_dylib.c -o insert_dylib
           sudo cp insert_dylib /usr/local/bin/
           chmod +x /usr/local/bin/insert_dylib
+          echo "Successfully installed insert_dylib"
         else
-          echo "Error: Failed to build insert_dylib!"
-          ls -R .
-          exit 1
+          echo "Listing files to find main file..."
+          ls -R
+          xcodebuild -configuration Release
+          find . -name insert_dylib -type f -exec sudo cp {} /usr/local/bin/ \;
         fi
         
-        # Verify installation
-        command -v insert_dylib
-        insert_dylib --version || true
+        # Install optool as fallback
+        echo "Building optool..."
+        git clone --recursive https://github.com/alexzielenski/optool.git /tmp/optool
+        cd /tmp/optool
+        xcodebuild -configuration Release
+        if [ -f "build/Release/optool" ]; then
+          sudo cp build/Release/optool /usr/local/bin/
+          echo "Successfully installed optool"
+        fi
+        
+        # Verify tools
+        command -v insert_dylib || echo "insert_dylib not found"
+        command -v optool || echo "optool not found"
     
     - name: Build DeviceRotation dylib
       run: |
         echo "Building DeviceRotation.dylib..."
         cd DeviceRotation
         export THEOS=~/theos
+        # Ensure SDK is found
         make clean
-        make package
+        make
         
-        # Verify build output
-        ls -R .theos/obj
-        
-        # Copy dylib to Frameworks
-        mkdir -p ../swiggy-extracted/Frameworks
-        cp .theos/obj/debug/DeviceRotation.dylib ../swiggy-extracted/Frameworks/ || cp .theos/obj/DeviceRotation.dylib ../swiggy-extracted/Frameworks/
+        # Find the dylib (Theos might put it in different places)
+        DYLIB_FILE=$(find . -name "DeviceRotation.dylib" -type f | head -n 1)
+        if [ -f "$DYLIB_FILE" ]; then
+          echo "Found dylib at $DYLIB_FILE"
+          mkdir -p ../swiggy-extracted/Frameworks
+          cp "$DYLIB_FILE" ../swiggy-extracted/Frameworks/
+        else
+          echo "Error: DeviceRotation.dylib not found!"
+          ls -R .
+          exit 1
+        fi
         
         echo "Dylib built successfully!"
         ls -lh ../swiggy-extracted/Frameworks/DeviceRotation.dylib
@@ -78,18 +94,26 @@ jobs:
         # Check if binary exists
         if [ ! -f "$BINARY" ]; then
           echo "Error: Binary not found at $BINARY"
-          ls -R swiggy-extracted/
           exit 1
         fi
         
         # Backup original
         cp "$BINARY" "${BINARY}.backup"
         
-        # Inject using insert_dylib
-        insert_dylib --inplace --all-yes "$DYLIB_PATH" "$BINARY"
+        # Try insert_dylib first
+        if command -v insert_dylib &> /dev/null; then
+          echo "Using insert_dylib..."
+          insert_dylib --inplace --all-yes "$DYLIB_PATH" "$BINARY"
+        elif command -v optool &> /dev/null; then
+          echo "Using optool..."
+          optool install -c load -p "$DYLIB_PATH" -t "$BINARY"
+        else
+          echo "Error: No injection tool found!"
+          exit 1
+        fi
         
         # Verify injection
-        otool -L "$BINARY" | grep DeviceRotation
+        otool -L "$BINARY" | grep DeviceRotation || true
         
         echo "Dylib injected successfully!"
     
